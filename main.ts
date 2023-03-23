@@ -1,5 +1,7 @@
-input.onButtonEvent(Button.A, ButtonEvent.Click, function () {
-	game.gameOver()
+input.onButtonEvent(Button.A, input.buttonEventClick(), function() {
+    
+    game.pause()
+    game.gameOver()
 })
 
 function löscheZeichen(Zeile: number, Spalte: number) {
